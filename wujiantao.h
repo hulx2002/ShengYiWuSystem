@@ -7,6 +7,7 @@
 class wujiantao {
 public:
     wujiantao();
+    wujiantao(int szh_score, int szy_score, int szs_score, int kzb_score, int lzg_score);
     shengzhihua* getszh();
     sizhiyu* getszy();
     shizhisha* getszs();
