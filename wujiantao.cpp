@@ -8,17 +8,17 @@ wujiantao::wujiantao() {
     this->lzg = nullptr;
 }
 
-wujiantao::wujiantao(int szh_score, int szy_score, int szs_score, int kzb_score, int lzg_score) {
+wujiantao::wujiantao(int score_current[]) {
     this->szh = new shengzhihua();
-    this->szh->setscore(szh_score);
+    this->szh->setscore(score_current[0]);
     this->szy = new sizhiyu();
-    this->szy->setscore(szy_score);
+    this->szy->setscore(score_current[1]);
     this->szs = new shizhisha();
-    this->szs->setscore(szs_score);
+    this->szs->setscore(score_current[2]);
     this->kzb = new kongzhibei();
-    this->kzb->setscore(kzb_score);
+    this->kzb->setscore(score_current[3]);
     this->lzg = new lizhiguan();
-    this->lzg->setscore(lzg_score);
+    this->lzg->setscore(score_current[4] - 20);
 }
 
 shengzhihua* wujiantao::getszh() {
